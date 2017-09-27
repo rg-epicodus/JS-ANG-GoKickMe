@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Item to Fund</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Item Title:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Item Author:</label>
+        <br>
+        <input #newAuthor>
+      </div>
+
+      <div>
+        <label>Item Goal:</label>
+        <br>
+        <input #newGoal>
+      </div>
+
+      <div>
+        <label>Item Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button class="btn" (click)="submitForm(newName.value, newAuthor.value, newDescription.value, newGoal.value); newName.value=''; newAuthor.value=''; newGoal.value=''; newDescription.value=''">Add</button>
+    </div>
+  </div>
+</div>

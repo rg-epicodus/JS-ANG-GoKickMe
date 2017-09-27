@@ -1,0 +1,10 @@
+<h2>Marketplace</h2>
+
+<div *ngFor="let item of items | async" class="panel panel-default">
+  <div class="panel-body">
+    <!-- <div *ngIf="currentRoute === '/admin'"> -->
+    <h3><em>{{item.name}}</em> by {{item.author}}</h3><br>
+    <h4>Description: {{item.description}}</h4><h5>Goal: {{item.goal}}</h5>
+  </div>
+</div>
+<!-- </div> -->
