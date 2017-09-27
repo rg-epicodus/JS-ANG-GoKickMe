@@ -5,6 +5,7 @@
     <!-- <div *ngIf="currentRoute === '/admin'"> -->
     <h3><em>{{item.name}}</em> by {{item.author}}</h3><br>
     <h4>Description: {{item.description}}</h4><h5>Goal: {{item.goal}}</h5>
+    <app-edit-item [selectedItem]="item"></app-edit-item>
   </div>
 </div>
 <!-- </div> -->

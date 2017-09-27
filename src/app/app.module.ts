@@ -11,6 +11,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
+import { EditItemComponent } from './edit-item/edit-item.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -24,7 +26,9 @@ export const firebaseConfig = {
     AppComponent,
     AdminComponent,
     MarketplaceComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    EditItemComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

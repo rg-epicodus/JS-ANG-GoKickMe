@@ -1,0 +1,16 @@
+<h4>Edit Item</h4>
+<label>New Item Name:</label>
+<input [(ngModel)]="selectedItem.name">
+<br>
+<label>New Author:</label>
+<input [(ngModel)]="selectedItem.author">
+<br>
+<label>New Item Description:</label>
+<input [(ngModel)]="selectedItem.description">
+<br>
+<label>New Goal:</label>
+<input [(ngModel)]="selectedItem.goal" >
+<br>
+<!-- <button (click)="beginUpdatingItem(selectedItem)">Update</button> -->
+<hr>
+<button (click)="beginDeletingItem(selectedItem)">Delete</button>
