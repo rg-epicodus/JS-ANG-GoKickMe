@@ -31,8 +31,8 @@ updateItem(localUpdatedItem){
 }
 
 deleteItem(localItemToDelete){
-  // var albumEntryInFirebase = this.getItemById(localItemToDelete.$key);
-  // albumEntryInFirebase.remove();
+  var albumEntryInFirebase = this.getItemById(localItemToDelete.$key);
+  albumEntryInFirebase.remove();
 }
 
 }
