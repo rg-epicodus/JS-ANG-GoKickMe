@@ -11,6 +11,7 @@ export class ItemService {
   }
 
   getItems() {
+    // return this.items.subscribe( data => {
     return this.items;
   }
 

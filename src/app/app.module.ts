@@ -14,6 +14,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
+import { CategorySortPipe } from './category-sort.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     MarketplaceComponent,
     WelcomeComponent,
     EditItemComponent,
-    AboutComponent
+    AboutComponent,
+    CategorySortPipe
   ],
   imports: [
     BrowserModule,

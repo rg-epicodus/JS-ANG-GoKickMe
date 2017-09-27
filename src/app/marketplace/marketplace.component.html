@@ -1,6 +1,13 @@
 <h2>Marketplace</h2>
+<select (change)="onChange($event.target.value)">
+       <option value="" selected disabled>Select By Category</option>
+       <option value="all">View All</option>
+       <option value = "projects"> Project</option>
+       <option value = "charity"> Charity</option>
+       <option value= "ideas"> Ideas </option>
+     </select>
 
-<div *ngFor="let item of items | async" class="panel panel-default">
+<div *ngFor="let item of items | categorySort:categoryFilter |  async" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{item.name}}</em> by {{item.author}}</h3><br>
     <h4>Description: {{item.description}}</h4><h5>Goal: {{item.goal}}</h5><h5>Category: {{item.category}} </h5>

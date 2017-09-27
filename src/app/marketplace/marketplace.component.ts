@@ -13,11 +13,16 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class MarketplaceComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  categoryFilter: string = "allCategories";
 
   constructor(private router: Router, private itemService: ItemService) { }
 
   ngOnInit() {
     this.items = this.itemService.getItems();
+  }
+  onChange(optionFromCategory){
+    
+    this.categoryFilter = optionFromCategory;
   }
 
 
