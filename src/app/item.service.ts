@@ -15,19 +15,19 @@ export class ItemService {
   }
 
 addItem(newItem: Item) {
-  // this.items.push(newItem);
+  this.items.push(newItem);
 }
 
 getItemById(itemId: string){
-  // return this.database.object('/items/' + itemId);
+  return this.database.object('/items/' + itemId);
 }
 
 updateItem(localUpdatedItem){
-  // var itemEntryInFirebase = this.getItemById(localUpdatedItem.$key);
-  // itemEntryInFirebase.update({name: localUpdatedItem.name,
-  //                             author: localUpdatedItem.author,
-  //                             goal: localUpdatedItem.goal,
-  //                             description: localUpdatedItem.description});
+  var itemEntryInFirebase = this.getItemById(localUpdatedItem.$key);
+  itemEntryInFirebase.update({name: localUpdatedItem.name,
+                              author: localUpdatedItem.author,
+                              goal: localUpdatedItem.goal,
+                              description: localUpdatedItem.description});
 }
 
 deleteItem(localItemToDelete){

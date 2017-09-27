@@ -2,10 +2,10 @@
 
 <div *ngFor="let item of items | async" class="panel panel-default">
   <div class="panel-body">
-    <!-- <div *ngIf="currentRoute === '/admin'"> -->
     <h3><em>{{item.name}}</em> by {{item.author}}</h3><br>
-    <h4>Description: {{item.description}}</h4><h5>Goal: {{item.goal}}</h5>
-    <app-edit-item [selectedItem]="item"></app-edit-item>
-  </div>
+    <h4>Description: {{item.description}}</h4><h5>Goal: $ {{item.goal}}</h5>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit-item [selectedItem]="item"></app-edit-item>
+    </div>
 </div>
-<!-- </div> -->
+</div>

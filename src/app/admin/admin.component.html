@@ -27,7 +27,10 @@
         <br>
         <textarea #newDescription></textarea>
       </div>
-      <button class="btn" (click)="submitForm(newName.value, newAuthor.value, newDescription.value, newGoal.value); newName.value=''; newAuthor.value=''; newGoal.value=''; newDescription.value=''">Add</button>
+      <button class="btn" (click)="submitForm(newName.value, newAuthor.value, newDescription.value, newGoal.value); newName.value=''; newAuthor.value=''; newGoal.value=''; newDescription.value=''">Add Item</button>
     </div>
   </div>
+</div>
+<div>
+  <app-marketplace></app-marketplace>
 </div>
