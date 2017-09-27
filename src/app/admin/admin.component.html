@@ -27,7 +27,19 @@
         <br>
         <textarea #newDescription></textarea>
       </div>
-      <button class="btn" (click)="submitForm(newName.value, newAuthor.value, newDescription.value, newGoal.value); newName.value=''; newAuthor.value=''; newGoal.value=''; newDescription.value=''">Add Item</button>
+
+      <div>
+        <label>Item Category</label>
+        <br>
+        <select #newCategory>
+          <option value="" selected disabled>Select Category</option>
+          <option value="Ideas">Ideas</option>
+          <option value="Projects">Projects</option>
+          <option value="Charity">Charitable Acts</option>
+        </select>
+      </div>
+
+      <button class="btn" (click)="submitForm(newName.value, newAuthor.value, newDescription.value, newGoal.value, newCategory.value); newName.value=''; newAuthor.value=''; newGoal.value=''; newCategory.value=''; newDescription.value=''">Add Item</button>
     </div>
   </div>
 </div>

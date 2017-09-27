@@ -27,7 +27,8 @@ updateItem(localUpdatedItem){
   itemEntryInFirebase.update({name: localUpdatedItem.name,
                               author: localUpdatedItem.author,
                               goal: localUpdatedItem.goal,
-                              description: localUpdatedItem.description});
+                              description: localUpdatedItem.description,
+                              category: localUpdatedItem.category});
 }
 
 deleteItem(localItemToDelete){

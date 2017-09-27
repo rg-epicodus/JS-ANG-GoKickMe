@@ -3,12 +3,14 @@
     "author": "Test Author 1",
     "description": "Test Description 1",
     "goal": "1,233,567",
+    "category": "Idea",
     "id": "1"
   }, {
     "name": "Test Item 2",
     "author": "Test Author 2",
     "description": "Test Description 2",
     "goal": "1,233,567",
+    "category": "Project",
     "id": "2"
 
   }, {
@@ -16,6 +18,7 @@
     "author": "Test Author 3",
     "description": "Test Description 3",
     "goal": "1,233,567",
+    "category": "Charitable Act",
     "id": "3"
 
   }, {
@@ -23,6 +26,7 @@
     "author": "Test Author 4",
     "description": "Test Description 4",
     "goal": "1,233,567",
+    "category": "Idea",
     "id": "4"
 
 }]
