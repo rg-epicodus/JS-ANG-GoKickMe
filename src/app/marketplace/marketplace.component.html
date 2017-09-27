@@ -7,7 +7,7 @@
        <option value= "ideas"> Ideas </option>
      </select>
 
-<div *ngFor="let item of items | categorySort:categoryFilter |  async" class="panel panel-default">
+<div *ngFor="let item of items | async | categorySort:categoryFilter " class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{item.name}}</em> by {{item.author}}</h3><br>
     <h4>Description: {{item.description}}</h4><h5>Goal: {{item.goal}}</h5><h5>Category: {{item.category}} </h5>
