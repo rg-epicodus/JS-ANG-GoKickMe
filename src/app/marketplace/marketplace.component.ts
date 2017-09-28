@@ -10,6 +10,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./marketplace.component.css'],
   providers: [ItemService]
 })
+
 export class MarketplaceComponent implements OnInit {
   items: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
@@ -20,9 +21,14 @@ export class MarketplaceComponent implements OnInit {
   ngOnInit() {
     this.items = this.itemService.getItems();
   }
+
   onChange(optionFromCategory){
-    
+
     this.categoryFilter = optionFromCategory;
+  }
+
+  goToDetailPage(clickedItem){
+    this.router.navigate(['items', clickedItem.$key]);
   }
 
 

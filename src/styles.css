@@ -3,6 +3,10 @@ html {
   margin-bottom: 75px;
 }
 
+body {
+  /*background-image: url('https://wallpaperbrowse.com/media/images/background-18.jpg');*/
+}
+
 .footer {
   position: fixed;
   bottom: 0;

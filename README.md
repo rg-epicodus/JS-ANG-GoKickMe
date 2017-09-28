@@ -1,6 +1,8 @@
 # Javascript Angular GoKickMe Project Readme
 This web application will do the following:
 
+  Allow user to see many different things to potentially help fund in a crowdsourcing way.
+
 ## Setup/Installation Requirements
 
 ### Development server

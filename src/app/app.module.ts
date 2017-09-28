@@ -15,6 +15,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
 import { CategorySortPipe } from './category-sort.pipe';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     EditItemComponent,
     AboutComponent,
-    CategorySortPipe
+    CategorySortPipe,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
